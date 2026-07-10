@@ -1,0 +1,15 @@
+C:\Programming\Laboratory\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Programming\Laboratory\DataAccess\bin\Debug\DataAccess.dll
+C:\Programming\Laboratory\DataAccess\bin\Debug\DataAccess.pdb
+C:\Programming\Laboratory\DataAccess\bin\Debug\DomainModel.dll
+C:\Programming\Laboratory\DataAccess\bin\Debug\EntityFramework.dll
+C:\Programming\Laboratory\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Programming\Laboratory\DataAccess\bin\Debug\DomainModel.pdb
+C:\Programming\Laboratory\DataAccess\bin\Debug\DomainModel.dll.config
+C:\Programming\Laboratory\DataAccess\bin\Debug\EntityFramework.xml
+C:\Programming\Laboratory\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.dll
+C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.pdb

@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\FastReport.OpenSource.2026.2.1\build\FastReport.OpenSource.props" Condition="Exists('..\packages\FastReport.OpenSource.2026.2.1\build\FastReport.OpenSource.props')" />
+  <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C5EB2FAE-4AA9-4E20-8072-C16B21B2414F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Laboratory</RootNamespace>
+    <AssemblyName>Laboratory</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="DateTimeSelector">
+      <HintPath>..\..\Component\DateTimeSelector 1.1.2\DateTimeSelector.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.5.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="FarsiLibrary.Win">
+      <HintPath>..\..\Component\FarsiLibrary.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport, Version=2026.2.1.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.OpenSource.2026.2.1\lib\net462\FastReport.dll</HintPath>
+    </Reference>
+    <Reference Include="FastReport.Compat, Version=2026.2.1.0, Culture=neutral, PublicKeyToken=5ceb240df42bf6e8, processorArchitecture=MSIL">
+      <HintPath>..\packages\FastReport.Compat.2026.2.1\lib\net462\FastReport.Compat.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\Doctors\frmDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctors\frmDoctors.Designer.cs">
+      <DependentUpon>frmDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Doctors\frmInactiveDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctors\frmInactiveDoctors.Designer.cs">
+      <DependentUpon>frmInactiveDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Doctors\frmNewDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Doctors\frmNewDoctor.Designer.cs">
+      <DependentUpon>frmNewDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmBasicEmployeeInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmBasicEmployeeInfo.Designer.cs">
+      <DependentUpon>frmBasicEmployeeInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmInactiveEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmInactiveEmployee.Designer.cs">
+      <DependentUpon>frmInactiveEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmNewPassword.Designer.cs">
+      <DependentUpon>frmNewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmOldPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmOldPassword.Designer.cs">
+      <DependentUpon>frmOldPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmShowInfoEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmShowInfoEmployee.Designer.cs">
+      <DependentUpon>frmShowInfoEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Employees\frmUserPassEmployee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Employees\frmUserPassEmployee.Designer.cs">
+      <DependentUpon>frmUserPassEmployee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\frmNewPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\frmNewPatient.Designer.cs">
+      <DependentUpon>frmNewPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\frmPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\frmPatients.Designer.cs">
+      <DependentUpon>frmPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\frmPatientShowInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\frmPatientShowInfo.Designer.cs">
+      <DependentUpon>frmPatientShowInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Patients\frmPatientTestAcceptionList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Patients\frmPatientTestAcceptionList.Designer.cs">
+      <DependentUpon>frmPatientTestAcceptionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmNewTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmNewTest.Designer.cs">
+      <DependentUpon>frmNewTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmNewTestParameter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmNewTestParameter.Designer.cs">
+      <DependentUpon>frmNewTestParameter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Tests\frmNewTestRange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tests\frmNewTestRange.Designer.cs">
+      <DependentUpon>frmNewTestRange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainBoard.Designer.cs">
+      <DependentUpon>frmMainBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Doctors\frmDoctors.resx">
+      <DependentUpon>frmDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctors\frmInactiveDoctors.resx">
+      <DependentUpon>frmInactiveDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Doctors\frmNewDoctor.resx">
+      <DependentUpon>frmNewDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmBasicEmployeeInfo.resx">
+      <DependentUpon>frmBasicEmployeeInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmInactiveEmployee.resx">
+      <DependentUpon>frmInactiveEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmNewPassword.resx">
+      <DependentUpon>frmNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmOldPassword.resx">
+      <DependentUpon>frmOldPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmShowInfoEmployee.resx">
+      <DependentUpon>frmShowInfoEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Employees\frmUserPassEmployee.resx">
+      <DependentUpon>frmUserPassEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\frmNewPatient.resx">
+      <DependentUpon>frmNewPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\frmPatients.resx">
+      <DependentUpon>frmPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\frmPatientShowInfo.resx">
+      <DependentUpon>frmPatientShowInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Patients\frmPatientTestAcceptionList.resx">
+      <DependentUpon>frmPatientTestAcceptionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmNewTest.resx">
+      <DependentUpon>frmNewTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmNewTestParameter.resx">
+      <DependentUpon>frmNewTestParameter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Tests\frmNewTestRange.resx">
+      <DependentUpon>frmNewTestRange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainBoard.resx">
+      <DependentUpon>frmMainBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{b5ea92ae-0333-4d1b-8ac2-41876545ccd9}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DomainModel\DomainModel.csproj">
+      <Project>{81f24d94-bc0e-457b-a5ef-c23cc167d9e8}</Project>
+      <Name>DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{78d0dcb7-9552-44ac-a0f7-eafe73db5262}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.5.2\build\EntityFramework.targets'))" />
+    <Error Condition="!Exists('..\packages\FastReport.OpenSource.2026.2.1\build\FastReport.OpenSource.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\FastReport.OpenSource.2026.2.1\build\FastReport.OpenSource.props'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.5.2\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.5.2\build\EntityFramework.targets')" />
+</Project>

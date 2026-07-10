@@ -1,0 +1,6 @@
+C:\Programming\Laboratory\Framework\bin\Debug\Framework.dll
+C:\Programming\Laboratory\Framework\bin\Debug\Framework.pdb
+C:\Programming\Laboratory\Framework\obj\Debug\Framework.csproj.CoreCompileInputs.cache
+C:\Programming\Laboratory\Framework\obj\Debug\Framework.dll
+C:\Programming\Laboratory\Framework\obj\Debug\Framework.pdb
+C:\Programming\Laboratory\Framework\obj\Debug\Framework.csprojAssemblyReference.cache
