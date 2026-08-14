@@ -59,6 +59,9 @@
     <Compile Include="BussinessModel\PatientCheckingValidationItem.cs" />
     <Compile Include="BussinessModel\PatientSearchListItem.cs" />
     <Compile Include="BussinessModel\PatientTestListItem.cs" />
+    <Compile Include="BussinessModel\TestAcceptionItemViewModel.cs" />
+    <Compile Include="BussinessModel\TestAcceptionListItem.cs" />
+    <Compile Include="BussinessModel\TestParameterTemp.cs" />
     <Compile Include="BussinessModel\TestSearchListItem.cs" />
     <Compile Include="BussinessModel\UserPassEmployee.cs" />
     <Compile Include="Models\Doctor.cs" />

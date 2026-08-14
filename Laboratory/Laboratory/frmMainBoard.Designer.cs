@@ -30,6 +30,7 @@ namespace Laboratory
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMainBoard));
             this.mainMenu = new System.Windows.Forms.MenuStrip();
             this.اطلاعاتپایهToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.مدیریتکارمندانToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,6 +62,8 @@ namespace Laboratory
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.lblDate = new System.Windows.Forms.ToolStripLabel();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.pnlRight = new System.Windows.Forms.Panel();
+            this.flpLeft = new System.Windows.Forms.FlowLayoutPanel();
             this.mainMenu.SuspendLayout();
             this.toolStrip.SuspendLayout();
             this.SuspendLayout();
@@ -75,7 +78,7 @@ namespace Laboratory
             this.گزارشگیریToolStripMenuItem});
             this.mainMenu.Location = new System.Drawing.Point(0, 0);
             this.mainMenu.Name = "mainMenu";
-            this.mainMenu.Size = new System.Drawing.Size(933, 28);
+            this.mainMenu.Size = new System.Drawing.Size(938, 28);
             this.mainMenu.TabIndex = 1;
             // 
             // اطلاعاتپایهToolStripMenuItem
@@ -96,7 +99,7 @@ namespace Laboratory
             this.تغییررمزعبورToolStripMenuItem,
             this.لیستکارمندانغیرفعالToolStripMenuItem});
             this.مدیریتکارمندانToolStripMenuItem.Name = "مدیریتکارمندانToolStripMenuItem";
-            this.مدیریتکارمندانToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.مدیریتکارمندانToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.مدیریتکارمندانToolStripMenuItem.Text = "مدیریت کارمندان";
             // 
             // ثبتکارمندجدیدToolStripMenuItem
@@ -133,7 +136,7 @@ namespace Laboratory
             this.ثبتمشتریجدیدToolStripMenuItem,
             this.جستجووویرایشمشتریToolStripMenuItem});
             this.مدیریتمشتریانToolStripMenuItem.Name = "مدیریتمشتریانToolStripMenuItem";
-            this.مدیریتمشتریانToolStripMenuItem.Size = new System.Drawing.Size(155, 24);
+            this.مدیریتمشتریانToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
             this.مدیریتمشتریانToolStripMenuItem.Text = "مدیریت بیماران";
             // 
             // ثبتمشتریجدیدToolStripMenuItem
@@ -157,7 +160,7 @@ namespace Laboratory
             this.جستجووویرایشپزشکToolStripMenuItem,
             this.لیستپزشکانغیرفعالToolStripMenuItem});
             this.مدیریتپزشکانToolStripMenuItem1.Name = "مدیریتپزشکانToolStripMenuItem1";
-            this.مدیریتپزشکانToolStripMenuItem1.Size = new System.Drawing.Size(155, 24);
+            this.مدیریتپزشکانToolStripMenuItem1.Size = new System.Drawing.Size(180, 24);
             this.مدیریتپزشکانToolStripMenuItem1.Text = "مدیریت پزشکان";
             // 
             // ثبتپزشکجدیدToolStripMenuItem
@@ -239,15 +242,15 @@ namespace Laboratory
             // ثبتآزمایشجدیدToolStripMenuItem1
             // 
             this.ثبتآزمایشجدیدToolStripMenuItem1.Name = "ثبتآزمایشجدیدToolStripMenuItem1";
-            this.ثبتآزمایشجدیدToolStripMenuItem1.Size = new System.Drawing.Size(225, 24);
-            this.ثبتآزمایشجدیدToolStripMenuItem1.Text = "ثبت آزمایش جدید";
+            this.ثبتآزمایشجدیدToolStripMenuItem1.Size = new System.Drawing.Size(201, 24);
+            this.ثبتآزمایشجدیدToolStripMenuItem1.Text = "پذیرش بیمار";
             this.ثبتآزمایشجدیدToolStripMenuItem1.Click += new System.EventHandler(this.ثبتآزمایشجدیدToolStripMenuItem1_Click);
             // 
             // جستجوآزمایشمشتریانToolStripMenuItem
             // 
             this.جستجوآزمایشمشتریانToolStripMenuItem.Name = "جستجوآزمایشمشتریانToolStripMenuItem";
-            this.جستجوآزمایشمشتریانToolStripMenuItem.Size = new System.Drawing.Size(225, 24);
-            this.جستجوآزمایشمشتریانToolStripMenuItem.Text = "جستجو و ویرایش آزمایش بیماران";
+            this.جستجوآزمایشمشتریانToolStripMenuItem.Size = new System.Drawing.Size(201, 24);
+            this.جستجوآزمایشمشتریانToolStripMenuItem.Text = "ثبت و ویرایش نتیجه آزمایش";
             // 
             // گزارشگیریToolStripMenuItem
             // 
@@ -266,7 +269,7 @@ namespace Laboratory
             this.lblDate});
             this.toolStrip.Location = new System.Drawing.Point(0, 724);
             this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Size = new System.Drawing.Size(933, 25);
+            this.toolStrip.Size = new System.Drawing.Size(938, 25);
             this.toolStrip.TabIndex = 3;
             this.toolStrip.Text = "toolStrip1";
             // 
@@ -304,15 +307,35 @@ namespace Laboratory
             this.timer.Interval = 1000;
             this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
+            // pnlRight
+            // 
+            this.pnlRight.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.pnlRight.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlRight.Location = new System.Drawing.Point(0, 28);
+            this.pnlRight.Name = "pnlRight";
+            this.pnlRight.Size = new System.Drawing.Size(189, 696);
+            this.pnlRight.TabIndex = 6;
+            // 
+            // flpLeft
+            // 
+            this.flpLeft.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flpLeft.Location = new System.Drawing.Point(189, 28);
+            this.flpLeft.Name = "flpLeft";
+            this.flpLeft.Size = new System.Drawing.Size(749, 696);
+            this.flpLeft.TabIndex = 7;
+            // 
             // frmMainBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(933, 749);
+            this.ClientSize = new System.Drawing.Size(938, 749);
+            this.Controls.Add(this.flpLeft);
+            this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.toolStrip);
             this.Controls.Add(this.mainMenu);
             this.Font = new System.Drawing.Font("Kalameh", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.mainMenu;
             this.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
@@ -367,6 +390,8 @@ namespace Laboratory
         private System.Windows.Forms.ToolStripMenuItem جستجووویرایشپارامترهاToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem مدیریتبازههایمرجعToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ثبتبازهمرجعجدیدToolStripMenuItem;
+        private System.Windows.Forms.Panel pnlRight;
+        private System.Windows.Forms.FlowLayoutPanel flpLeft;
     }
 }
 

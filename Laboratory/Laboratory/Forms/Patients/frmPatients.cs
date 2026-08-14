@@ -131,7 +131,7 @@ namespace Laboratory.Forms.Patients
                 }
             }
             var formText = $"فرم ثبت آزمایش جدید بیمار {addNewTest.PatientName}";
-            var newForm = new frmNewTest(_patientId, addNewTest)
+            var newForm = new frmNewTest(_patientId, addNewTest, _currentUser)
             {
                 Text = formText,
                 MdiParent = this.MdiParent

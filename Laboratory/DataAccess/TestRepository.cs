@@ -60,14 +60,60 @@ namespace DataAccess
                 return Result<Test>.Fail(ErrorCode.DatabaseError, ex.Message);
             }
         }
+
+        public Result<Test> GetByTestId(int testId)
+        {
+            try
+            {
+                var test = _db.Test.FirstOrDefault(x => x.TestId == testId && x.IsDeleted == false);
+                return test == null ? Result<Test>.Fail(ErrorCode.UserNotFound, "پارامتر مورد نظر پیدا نشد!") :
+                                      Result<Test>.Success(test);
+            }
+            catch (Exception ex)
+            {
+                return Result<Test>.Fail(ErrorCode.DatabaseError, ex.Message);
+            }
+        }
+
+        public Result<TestAcceptionItemViewModel> GetTestItemsByTestId(int testId)
+        {
+            try
+            {
+                var test = _db.Test.Where(x => x.TestId == testId && x.IsDeleted == false)
+                    .Select(x => new TestAcceptionItemViewModel
+                    {
+                        TestId = x.TestId,
+                        TestName = x.TestName,
+                        TestMethodId = x.TestMethodId,
+                        TestMethodName = x.TestMethod.TestMethodName,
+                        UnitId = x.UnitId,
+                        UnitName = x.Unit.UnitName
+                    })
+                    .FirstOrDefault();
+
+                if (test == null)
+                {
+                    const string errorMsg = "پارامتر مورد نظر یافت نشد!";
+                    return Result<TestAcceptionItemViewModel>.Fail(ErrorCode.UserNotFound, errorMsg);
+                }
+                return Result<TestAcceptionItemViewModel>.Success(test);
+            }
+            catch (Exception ex)
+            {
+                return Result<TestAcceptionItemViewModel>.Fail(ErrorCode.DatabaseError, ex.Message);
+            }
+        }
+
         public bool HasExistTestName(string testName)
         {
             return _db.Test.Any(x => x.TestName == testName);
         }
+
         public List<Test> GetAllTests()
         {
             return _db.Test.Where(x => x.IsDeleted == false).OrderBy(x => x.TestName).ToList();
         }
+
         public List<TestSearchListItem> TestSearch(string phrase)
         {
             var q = from t in _db.Test

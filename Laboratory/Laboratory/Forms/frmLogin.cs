@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 using DataAccess;
 using DomainModel.Results;
@@ -19,12 +20,16 @@ namespace Laboratory.Forms
         public frmLogin()
         {
             InitializeComponent();
+            UiHelper.SetRoundedCorners(button1, 15);
+            UiHelper.SetOpacity(pcbUsername, 0.5f);
+            UiHelper.SetOpacity(pcbPassword, 0.5f);
             _repo = new EmployeeRepository();
             _secret = new HashingUtility();
         }
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
+            button1.BackColor = UiHelper.AppColors.Primary;
             txtUsername.Focus();
         }
 
@@ -69,7 +74,7 @@ namespace Laboratory.Forms
             if (string.IsNullOrEmpty(txtUsername.Text) || 
                 string.IsNullOrWhiteSpace(txtUsername.Text))
             {
-                err.SetError(txtUsername, "نام کاربری را وارد نمائید");
+                err.SetError(pnlUsername, "نام کاربری را وارد نمائید");
                 return;
             }
             err.Clear();

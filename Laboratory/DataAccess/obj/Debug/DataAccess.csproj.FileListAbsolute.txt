@@ -13,3 +13,18 @@ C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInpu
 C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.dll
 C:\Programming\Laboratory\DataAccess\obj\Debug\DataAccess.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\DataAccess.dll.config
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\DataAccess.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\DataAccess.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\DomainModel.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\DomainModel.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\DomainModel.dll.config
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.csprojAssemblyReference.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.pdb

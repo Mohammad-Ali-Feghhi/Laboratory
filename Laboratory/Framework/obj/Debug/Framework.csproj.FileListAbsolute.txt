@@ -4,3 +4,9 @@ C:\Programming\Laboratory\Framework\obj\Debug\Framework.csproj.CoreCompileInputs
 C:\Programming\Laboratory\Framework\obj\Debug\Framework.dll
 C:\Programming\Laboratory\Framework\obj\Debug\Framework.pdb
 C:\Programming\Laboratory\Framework\obj\Debug\Framework.csprojAssemblyReference.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\bin\Debug\Framework.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\bin\Debug\Framework.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.csprojAssemblyReference.cache

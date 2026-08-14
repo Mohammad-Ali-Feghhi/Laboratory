@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 using DomainModel.Models;
 using Framework;
@@ -6,6 +8,8 @@ using Laboratory.Forms.Doctors;
 using Laboratory.Forms.Employees;
 using Laboratory.Forms.Patients;
 using Laboratory.Forms.Tests;
+using Laboratory.Properties;
+using Laboratory.Quick_Access;
 
 namespace Laboratory
 {
@@ -15,7 +19,16 @@ namespace Laboratory
 
         private readonly Employee _currentUser;
         public bool ForceClose { get; set; } = false;
+        private readonly List<QuickAccessItem> _quickAccessListItem = new List<QuickAccessItem>();
 
+        #endregion
+
+        #region QuickAccessMenu
+
+        private void OpenNewTest()
+        {
+            ثبتآزمایشجدیدToolStripMenuItem1_Click(null, EventArgs.Empty);
+        }
         #endregion
 
         #region UtilityFunctions
@@ -25,6 +38,40 @@ namespace Laboratory
             lblUsername.Text = username;
         }
 
+        private void QuickAccessListItems()
+        {
+            flpLeft.Controls.Clear();
+            foreach (var item in _quickAccessListItem)
+            {
+                var control = new QuickAccessListItem
+                {
+                    Title = item.Title, 
+                    Description = item.Description, 
+                    Icon = item.Icon, 
+                    OpenForm = item.OpenForm
+                };
+                control.ItemClicked += QuickItem_click;
+                flpLeft.Controls.Add(control);
+            }
+        }
+
+        private void QuickItem_click(object sender, EventArgs e)
+        {
+            var control = (QuickAccessListItem) sender;
+            control.OpenForm?.Invoke();
+        }
+
+        private void OpenMdiForm(Form frm)
+        {
+            flpLeft.Visible = false;
+            pnlRight.Visible = false;
+            frm.FormClosed += (s, e) =>
+            {
+                flpLeft.Visible = true;
+                pnlRight.Visible = true;
+            };
+            frm.Show();
+        }
 
         #endregion
         public frmMainBoard()
@@ -36,6 +83,25 @@ namespace Laboratory
         {
             InitializeComponent();
             this._currentUser = currentUser;
+            this._quickAccessListItem = new List<QuickAccessItem>
+            {
+                new QuickAccessItem
+                {
+                    Id = 1,
+                    Title = "پذیرش بیمار",
+                    Description = "در این بخش اطلاعات بیمار و آزمایش‌های مورد نظر ثبت اولیه می‌شود.",
+                    Icon = Resources.Patient_Admission,
+                    OpenForm = OpenNewTest
+                },
+                new QuickAccessItem
+                {
+                    Id = 2,
+                    Title = "ثبت نتیجه",
+                    Description = "در این بخش می‌توان جواب آزمایش بیمار را ثبت و یا ویرایش کرد.",
+                    Icon = Resources.Lab_Report
+                },
+            };
+            QuickAccessListItems();
         }
 
         private void frmMainBoard_Load(object sender, EventArgs e)
@@ -91,7 +157,7 @@ namespace Laboratory
                 {
                     MdiParent = this
                 };
-                frm.Show();
+                OpenMdiForm(frm);
             }
         }
 
@@ -331,9 +397,12 @@ namespace Laboratory
             {
                 var frm = new frmNewTest(_currentUser)
                 {
-                    MdiParent = this
+                    MdiParent = this,
+                    MinimizeBox = false,
+                    MaximizeBox = false,
+                    ControlBox = true
                 };
-                frm.Show();
+                OpenMdiForm(frm);
             }
         }
     }
