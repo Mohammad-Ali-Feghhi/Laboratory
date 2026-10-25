@@ -244,5 +244,9 @@ namespace DataAccess
                 return Result<List<TestAcceptionHeader>>.Fail(ErrorCode.DatabaseError, ex.Message);
             }
         }
+        public void Dispose()
+        {
+            this._db.Dispose();
+        }
     }
 }

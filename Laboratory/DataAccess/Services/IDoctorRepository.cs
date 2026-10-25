@@ -9,7 +9,7 @@ using DomainModel.Results;
 
 namespace DataAccess.Services
 {
-    public interface IDoctorRepository
+    public interface IDoctorRepository : IDisposable
     {
         Result<Doctor> AddNewDoctor(Doctor newDoctor);
         Result<Doctor> UpdateDoctor(Doctor newDoctor);

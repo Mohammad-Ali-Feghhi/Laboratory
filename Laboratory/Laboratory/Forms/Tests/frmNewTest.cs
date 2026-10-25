@@ -20,9 +20,7 @@ namespace Laboratory.Forms.Tests
         private readonly TestRepository _testRepo;
         private readonly PatientRepository _patientRepo;
         private readonly DoctorRepository _doctorRepo;
-        private readonly UnitRepository _unitRepo;
         private readonly TestAcceptionRepository _testAcceptionRepo;
-        private readonly TestMethodRepository _testMethodRepo;
         public int PatientId { get; private set; }
         private int _testId;
         private int _testMethodId;
@@ -30,7 +28,6 @@ namespace Laboratory.Forms.Tests
         private int _testAcceptionHeaderId;
         public bool IsTestPatientForm { get; } = false;
         private readonly bool _isPatientForm;
-        private AddNewPatientTestItem _newPatientTest;
         private readonly Employee _currentEmployee;
         private BindingList<TestParameterTemp> _TestParametersTemp = new BindingList<TestParameterTemp>();
         private Guid? _editingTempId = null;
@@ -202,22 +199,18 @@ namespace Laboratory.Forms.Tests
 
         private void BindDoctorList()
         {
-            var doctorList = _doctorRepo.GetAllDoctors();
-            doctorList.Insert(0, new Doctor
+            using (_doctorRepo)
             {
-                DoctorName = "...انتخاب کنید...",
-                DoctorId = -1
-            });
-            cmbDoctor.DisplayMember = "DoctorName";
-            cmbDoctor.ValueMember = "DoctorId";
-            cmbDoctor.DataSource = doctorList;
-        }
-
-        private void BindDataGrid(IReadOnlyCollection<TestParameterTemp> testParameters)
-        {
-            DataGrid.AutoGenerateColumns = false;
-            DataGrid.DataSource = null;
-            DataGrid.DataSource = testParameters;
+                var doctorList = _doctorRepo.GetAllDoctors();
+                doctorList.Insert(0, new Doctor
+                {
+                    DoctorName = "...انتخاب کنید...",
+                    DoctorId = -1
+                });
+                cmbDoctor.DisplayMember = "DoctorName";
+                cmbDoctor.ValueMember = "DoctorId";
+                cmbDoctor.DataSource = doctorList;
+            }
         }
 
         #endregion
@@ -228,8 +221,6 @@ namespace Laboratory.Forms.Tests
             this._patientRepo = new PatientRepository();
             this._doctorRepo = new DoctorRepository();
             this._testAcceptionRepo = new TestAcceptionRepository();
-            this._testMethodRepo = new TestMethodRepository();
-            this._unitRepo = new UnitRepository();
             this._isPatientForm = false;
             this._currentEmployee = currentEmployee;
 
@@ -249,12 +240,9 @@ namespace Laboratory.Forms.Tests
             this._patientRepo = new PatientRepository();
             this._doctorRepo = new DoctorRepository();
             this._testAcceptionRepo = new TestAcceptionRepository();
-            this._testMethodRepo = new TestMethodRepository();
-            this._unitRepo = new UnitRepository();
             this._currentEmployee = currentEmployee;
             this._isPatientForm = true;
             this.PatientId = patientId;
-            this._newPatientTest = newPatientTest;
 
             InitializeComponent();
 
