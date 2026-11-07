@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -20,6 +21,7 @@ namespace DataAccess
         {
             return _db.ResponseType.Where(x => x.IsDeleted == false)
                                    .OrderBy(x => x.ResponseTypeName)
+                                   .AsNoTracking()
                                    .ToList();
         }
     }

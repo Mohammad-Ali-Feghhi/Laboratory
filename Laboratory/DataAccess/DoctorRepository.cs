@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using DataAccess.Services;
 using DomainModel.BussinessModel;
@@ -90,7 +91,7 @@ namespace DataAccess
         {
             try
             {
-                var doctor = _db.Doctor.FirstOrDefault(x => x.DoctorId == doctorId && x.IsDeleted == false);
+                var doctor = _db.Doctor.AsNoTracking().FirstOrDefault(x => x.DoctorId == doctorId && x.IsDeleted == false);
                 if (doctor == null)
                 {
                     return Result<Doctor>.Fail(ErrorCode.UserNotFound, "پزشک مورد نظر پیدا نشد.");
@@ -111,7 +112,7 @@ namespace DataAccess
                     return Result<Doctor>.Fail(ErrorCode.ValidationError, "شماره نظام پزشکی الزامی است.");
                 }
 
-                var doctor = _db.Doctor.FirstOrDefault(x => x.MedicalLicenseNumber == licenseNumber &&
+                var doctor = _db.Doctor.AsNoTracking().FirstOrDefault(x => x.MedicalLicenseNumber == licenseNumber &&
                                                             x.IsDeleted == false);
                 if (doctor == null)
                 {
@@ -143,17 +144,19 @@ namespace DataAccess
         {
             return _db.Doctor.Where(x => x.IsDeleted == false)
                              .OrderBy(x => x.DoctorName)
+                             .AsNoTracking()
                              .ToList();
         }
         public List<Doctor> GetAllDeactiveDoctors()
         {
             return _db.Doctor.Where(x => x.IsEnabled == false && x.IsDeleted == false)
                              .OrderBy(x => x.DoctorName)
+                             .AsNoTracking()
                              .ToList();
         }
         public List<DoctorSearchListItem> SearchDoctor(string phrase)
         {
-            var q = from d in _db.Doctor
+            var q = from d in _db.Doctor.AsNoTracking()
                 where d.DoctorName.StartsWith(phrase) ||
                       d.MedicalLicenseNumber.StartsWith(phrase) &&
                       d.IsDeleted == false
@@ -220,16 +223,16 @@ namespace DataAccess
         {
             try
             {
-                var exist = _db.TestAcceptionHeader.Any(x => x.DoctorId == doctorId && 
+                var exist = _db.TestAcceptionHeader.Any(x => x.DoctorId == doctorId &&
                                                              x.IsDeleted == false);
                 if (exist)
                 {
-                    var list = _db.TestAcceptionHeader.Where(x => x.DoctorId == doctorId && 
+                    var list = _db.TestAcceptionHeader.AsNoTracking().Where(x => x.DoctorId == doctorId &&
                                                                   x.IsDeleted == false).ToList();
                     return Result<List<TestAcceptionHeader>>.Success(list);
                 }
 
-                var doctorName = _db.Doctor.FirstOrDefault(x => x.DoctorId == doctorId && x.IsDeleted == false);
+                var doctorName = _db.Doctor.AsNoTracking().FirstOrDefault(x => x.DoctorId == doctorId && x.IsDeleted == false);
                 if (doctorName != null)
                 {
                     var errorMsg = $"برای دکتر {doctorName.DoctorName} آزمایش ثبت نشده است.";

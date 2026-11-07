@@ -286,7 +286,7 @@ namespace Laboratory.Forms.Employees
                 }
                 else
                 {
-                    var existUsername = _repo.HasExistUsername(txtUsername.Text);
+                    var existUsername = _repo.CheckUsernameExists(txtUsername.Text);
                     if (existUsername.IsSuccess)
                     {
                         UpdateEmployee();

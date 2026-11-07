@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -100,7 +101,7 @@ namespace DataAccess
             try
             {
                 var findTestAcceptionListItem =
-                    _db.TestAcceptionItem.FirstOrDefault(x => x.TestAcceptionItemId == testAcceptionItemId &&
+                    _db.TestAcceptionItem.AsNoTracking().FirstOrDefault(x => x.TestAcceptionItemId == testAcceptionItemId &&
                                                               x.IsDeleted == false);
                 if (findTestAcceptionListItem == null)
                 {
@@ -118,14 +119,15 @@ namespace DataAccess
         {
             return _db.TestAcceptionHeader.Where(x => x.IsDeleted == false)
                                           .OrderByDescending(x => x.AcceptionDate)
+                                          .AsNoTracking()
                                           .ToList();
         }
 
         public List<TestAcceptionListItem> GetAllTestAcceptionItems(int testAcceptionHeaderId)
         {
-            var query = from testAcceptionItem in _db.TestAcceptionItem
-                        join method in _db.TestMethod on testAcceptionItem.TestMethodId equals method.TestMethodId
-                        join unit in _db.Unit on testAcceptionItem.UnitId equals unit.UnitId
+            var query = from testAcceptionItem in _db.TestAcceptionItem.AsNoTracking()
+                        join method in _db.TestMethod.AsNoTracking() on testAcceptionItem.TestMethodId equals method.TestMethodId
+                        join unit in _db.Unit.AsNoTracking() on testAcceptionItem.UnitId equals unit.UnitId
                         where testAcceptionItem.TestAcceptionHeaderId == testAcceptionHeaderId &&
                               testAcceptionItem.IsDeleted == false
                         select new TestAcceptionListItem
@@ -139,7 +141,7 @@ namespace DataAccess
                             UnitId = testAcceptionItem.UnitId,
                             UnitName = unit.UnitName,
                             ResponseNumber = testAcceptionItem.ResponseNumber,
-                            ResponseNumberText = testAcceptionItem.ResponseNumber.HasValue 
+                            ResponseNumberText = testAcceptionItem.ResponseNumber.HasValue
                                                 ?testAcceptionItem.ResponseNumber.Value.ToString() : "کیفی",
                             ResponseDescription = testAcceptionItem.ResponseDescription,
                             ResponseBoolean = testAcceptionItem.ResponseBoolean,
@@ -209,11 +211,11 @@ namespace DataAccess
         {
             try
             {
-                var existTestItem = _db.TestAcceptionItem.Any(x => x.TestAcceptionHeaderId == testAcceptionHeaderId && 
-                                                                   x.TestId == testId && 
+                var existTestItem = _db.TestAcceptionItem.AsNoTracking().Any(x => x.TestAcceptionHeaderId == testAcceptionHeaderId &&
+                                                                   x.TestId == testId &&
                                                                    x.IsDeleted == false);
                 const string errorMsg = "این آیتم قبلا ثبت شده است!";
-                return !existTestItem ? Result<TestAcceptionItem>.Success(null) : 
+                return !existTestItem ? Result<TestAcceptionItem>.Success(null) :
                                         Result<TestAcceptionItem>.Fail(ErrorCode.ValidationError, errorMsg);
             }
             catch (Exception ex)

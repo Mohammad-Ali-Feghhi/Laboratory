@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using DataAccess.Services;
 using DomainModel.BussinessModel;
@@ -110,7 +111,7 @@ namespace DataAccess
         {
             try
             {
-                var patient = _db.Patient.FirstOrDefault(x => x.PatientId == patientId && x.IsDeleted == false);
+                var patient = _db.Patient.AsNoTracking().FirstOrDefault(x => x.PatientId == patientId && x.IsDeleted == false);
                 return patient == null ? Result<Patient>.Fail(ErrorCode.UserNotFound, "بیمار پیدا نشد!") :
                                          Result<Patient>.Success(patient);
             }
@@ -168,7 +169,7 @@ namespace DataAccess
         {
             try
             {
-                var patient = _db.Patient.FirstOrDefault(x => x.NationalCode == item.NationalCode || 
+                var patient = _db.Patient.AsNoTracking().FirstOrDefault(x => x.NationalCode == item.NationalCode ||
                                                               x.Mobile == item.Mobile &&
                                                               x.IsDeleted == false);
                 if (patient == null)
@@ -188,11 +189,12 @@ namespace DataAccess
         {
             return _db.Patient.Where(x => x.IsDeleted == false)
                               .OrderBy(x => x.PatientName)
+                              .AsNoTracking()
                               .ToList();
         }
         public List<PatientTestListItem> GetPatientTestListByPatientId(int patientId)
         {
-            var query = from item in _db.TestAcceptionHeader
+            var query = from item in _db.TestAcceptionHeader.AsNoTracking()
                 where item.PatientId == patientId &&
                       item.IsDeleted == false
                 select new PatientTestListItem
@@ -208,7 +210,7 @@ namespace DataAccess
         }
         public List<PatientSearchListItem> SearchPatient(string phrase)
         {
-            var q = from p in _db.Patient
+            var q = from p in _db.Patient.AsNoTracking()
                 where
                     p.PatientName.StartsWith(phrase) ||
                     p.NationalCode.StartsWith(phrase) ||

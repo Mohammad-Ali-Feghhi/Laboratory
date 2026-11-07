@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using DataAccess.Services;
 using DomainModel.Models;
@@ -45,7 +46,7 @@ namespace DataAccess
 
         public List<TestRange> GetAllTestRanges()
         {
-            return _db.TestRange.Where(x => x.IsDeleted == false).ToList();
+            return _db.TestRange.Where(x => x.IsDeleted == false).AsNoTracking().ToList();
         }
     }
 }

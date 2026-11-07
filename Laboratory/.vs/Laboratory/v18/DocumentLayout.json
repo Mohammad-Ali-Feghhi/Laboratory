@@ -1,12 +1,69 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Git\\Laboratory\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B5EA92AE-0333-4D1B-8AC2-41876545CCD9}|DataAccess\\DataAccess.csproj|c:\\users\\mohammad ali feghhi\\onedrive\\desktop\\laboratory\\dataaccess\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5EA92AE-0333-4D1B-8AC2-41876545CCD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5EA92AE-0333-4D1B-8AC2-41876545CCD9}|DataAccess\\DataAccess.csproj|C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\dataaccess\\services\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5EA92AE-0333-4D1B-8AC2-41876545CCD9}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\services\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81F24D94-BC0E-457B-A5EF-C23CC167D9E8}|DomainModel\\DomainModel.csproj|C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\domainmodel\\models\\sampletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F24D94-BC0E-457B-A5EF-C23CC167D9E8}|DomainModel\\DomainModel.csproj|solutionrelative:domainmodel\\models\\sampletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\DataAccess\\Services\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Services\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\DataAccess\\Services\\IEmployeeRepository.cs",
+              "RelativeToolTip": "DataAccess\\Services\\IEmployeeRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T05:21:23.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\DataAccess\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "DataAccess\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\DataAccess\\EmployeeRepository.cs",
+              "RelativeToolTip": "DataAccess\\EmployeeRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowC4AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T05:18:13.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SampleType.cs",
+              "DocumentMoniker": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\DomainModel\\Models\\SampleType.cs",
+              "RelativeDocumentMoniker": "DomainModel\\Models\\SampleType.cs",
+              "ToolTip": "C:\\Users\\Mohammad Ali Feghhi\\OneDrive\\Desktop\\Laboratory\\DomainModel\\Models\\SampleType.cs",
+              "RelativeToolTip": "DomainModel\\Models\\SampleType.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-04T05:15:20.131Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

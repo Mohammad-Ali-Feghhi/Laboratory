@@ -1,0 +1,33 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.sln.DotSettings
+*.sln.DotSettings.user
+
+# Build outputs
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+
+# NuGet packages
+packages/
+
+# Test results
+TestResults/
+*.trx
+
+# Logs
+*.log
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/

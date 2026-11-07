@@ -10,3 +10,9 @@ C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.dll
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.pdb
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Framework\obj\Debug\Framework.csprojAssemblyReference.cache
+D:\Ali Feghhi\Laboratory\Framework\bin\Debug\Framework.dll
+D:\Ali Feghhi\Laboratory\Framework\bin\Debug\Framework.pdb
+D:\Ali Feghhi\Laboratory\Framework\obj\Debug\Framework.dll
+D:\Ali Feghhi\Laboratory\Framework\obj\Debug\Framework.pdb
+D:\Ali Feghhi\Laboratory\Framework\obj\Debug\Framework.csproj.AssemblyReference.cache
+D:\Ali Feghhi\Laboratory\Framework\obj\Debug\Framework.csproj.CoreCompileInputs.cache

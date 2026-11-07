@@ -149,7 +149,7 @@ namespace Laboratory.Forms.Employees
             }
 
             var repo = new EmployeeRepository();
-            var hasExistUsername = repo.HasExistUsername(txtUsername.Text.ToLower());
+            var hasExistUsername = repo.CheckUsernameExists(txtUsername.Text.ToLower());
             if (hasExistUsername.ErrorCode == ErrorCode.ValidationError)
             {
                 MessageBox.Show(hasExistUsername.Message, "هشدار",

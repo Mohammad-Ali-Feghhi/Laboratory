@@ -27,7 +27,7 @@ namespace Laboratory.Forms.Employees
         {
             DataGrid.AutoGenerateColumns = false;
             DataGrid.DataSource = null;
-            DataGrid.DataSource = _repo.GetAllInactiveEmployees();
+            DataGrid.DataSource = _repo.GetInactiveEmployees();
         }
         
         #endregion
@@ -47,7 +47,7 @@ namespace Laboratory.Forms.Employees
             _employeeId = Convert.ToInt32(DataGrid.Rows[e.RowIndex].Cells[0].Value);
             if (e.ColumnIndex == 5)
             {
-                var employee = _repo.EnableEmployee(_employeeId);
+                var employee = _repo.ActivateEmployee(_employeeId);
                 if (employee.IsSuccess)
                 {
                     BindGrid();

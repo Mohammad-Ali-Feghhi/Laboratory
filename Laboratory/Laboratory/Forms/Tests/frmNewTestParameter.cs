@@ -188,7 +188,7 @@ namespace Laboratory.Forms.Tests
             {
                 TestName = txtTestName.Text,
                 UnitId = Convert.ToInt32(cmbUnit.SelectedValue),
-                SamplyeTypeId = Convert.ToInt32(cmbSampleType.SelectedValue),
+                SampleTypeId = Convert.ToInt32(cmbSampleType.SelectedValue),
                 TestMethodId = Convert.ToInt32(cmbTestMethod.SelectedValue),
                 TestCategoryId = Convert.ToInt32(cmbTestCategory.SelectedValue),
                 ResponseTypeId = Convert.ToInt32(cmbResponseType.SelectedValue),

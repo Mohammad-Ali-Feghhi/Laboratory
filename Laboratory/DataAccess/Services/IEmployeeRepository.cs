@@ -16,12 +16,12 @@ namespace DataAccess.Services
         Result<Employee> DeleteEmployee(int employeeId);
         Employee GetEmployeeByEmployeeId(int employeeId);
         Employee GetEmployeeByUsername(string username);
-        Result<Employee> EnableEmployee(int employeeId);
-        Result<Employee> HasExistUsername(string username);
+        Result<Employee> ActivateEmployee(int employeeId);
+        Result<Employee> CheckUsernameExists(string username);
         List<Employee> GetAllEmployees();
-        List<Employee> GetAllInactiveEmployees();
-        List<Employee> GetAllDeletedEmployees();
-        List<EmployeeSearchListItem> SearchEmployee(string phrase);
+        List<Employee> GetInactiveEmployees();
+        List<Employee> GetDeletedEmployees();
+        List<EmployeeSearchListItem> SearchEmployee(string searchTerm);
         List<LoginHistory> GetAllLoginHistories();
         Result<Employee> Login(string username, string password);
         Result<LoginHistory> AddToLoginHistory(string username);

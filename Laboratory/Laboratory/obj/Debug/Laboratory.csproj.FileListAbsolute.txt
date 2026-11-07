@@ -94,3 +94,93 @@ C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Laboratory\obj\Debu
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.CopyComplete
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Laboratory\obj\Debug\Laboratory.exe
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\Laboratory\obj\Debug\Laboratory.pdb
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.AssemblyReference.cache
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Doctors.frmDoctors.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Doctors.frmInactiveDoctors.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Doctors.frmNewDoctor.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmBasicEmployeeInfo.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmEmployee.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmInactiveEmployee.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmNewPassword.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmOldPassword.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmShowInfoEmployee.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmUserPassEmployee.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmNewPatient.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmPatients.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmPatientShowInfo.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmPatientTestAcceptionList.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Tests.frmNewTest.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Tests.frmNewTestParameter.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Tests.frmNewTestRange.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.frmMainBoard.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.frmLogin.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Properties.Resources.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.Quick_Access.QuickAccessListItem.resources
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.GenerateResource.cache
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.exe
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.pdb
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.CoreCompileInputs.cache
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\Laboratory.exe.config
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\Laboratory.exe
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\Laboratory.pdb
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\DataAccess.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\DomainModel.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\EntityFramework.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\FastReport.Compat.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\FastReport.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\Framework.dll
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\DataAccess.pdb
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\DataAccess.dll.config
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\DomainModel.pdb
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\DomainModel.dll.config
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\Framework.pdb
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\EntityFramework.xml
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ali Feghhi\Laboratory\Laboratory\bin\Debug\FastReport.xml
+D:\Ali Feghhi\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.Up2Date
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\Laboratory.exe.config
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\Laboratory.exe
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\Laboratory.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\DataAccess.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\DomainModel.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\EntityFramework.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\FastReport.Compat.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\FastReport.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\Framework.dll
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\DataAccess.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\DataAccess.dll.config
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\DomainModel.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\DomainModel.dll.config
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\Framework.pdb
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\EntityFramework.xml
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\bin\Debug\FastReport.xml
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.AssemblyReference.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Doctors.frmDoctors.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Doctors.frmInactiveDoctors.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Doctors.frmNewDoctor.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmBasicEmployeeInfo.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmEmployee.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmInactiveEmployee.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmNewPassword.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmOldPassword.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmShowInfoEmployee.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Employees.frmUserPassEmployee.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmNewPatient.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmPatients.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmPatientShowInfo.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Patients.frmPatientTestAcceptionList.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Tests.frmNewTest.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Tests.frmNewTestParameter.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.Tests.frmNewTestRange.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.frmMainBoard.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Forms.frmLogin.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Properties.Resources.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.Quick_Access.QuickAccessListItem.resources
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.GenerateResource.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.CoreCompileInputs.cache
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.csproj.Up2Date
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.exe
+C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Laboratory\Laboratory\obj\Debug\Laboratory.pdb

@@ -12,6 +12,19 @@ namespace DomainModel.Models
         {
         }
 
+        // Constructor for Effort.EF6 testing
+        public LabContext(string connectionString) : base(connectionString)
+        {
+        }
+
+        public LabContext(System.Data.Common.DbConnection connection) : base(connection, true)
+        {
+        }
+
+        public LabContext(System.Data.Entity.Core.EntityClient.EntityConnection connection) : base(connection, true)
+        {
+        }
+
         public virtual DbSet<Doctor> Doctor { get; set; }
         public virtual DbSet<Employee> Employee { get; set; }
         public virtual DbSet<LoginHistory> LoginHistory { get; set; }
@@ -53,7 +66,7 @@ namespace DomainModel.Models
             modelBuilder.Entity<SampleType>()
                 .HasMany(e => e.Test)
                 .WithRequired(e => e.SampleType)
-                .HasForeignKey(e => e.SamplyeTypeId)
+                .HasForeignKey(e => e.SampleTypeId)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Test>()

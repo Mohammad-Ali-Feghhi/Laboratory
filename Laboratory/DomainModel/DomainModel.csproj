@@ -82,6 +82,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Results\ErrorCode.cs" />
     <Compile Include="Results\Result.cs" />
+    <Compile Include="Validators\EmployeeValidator.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

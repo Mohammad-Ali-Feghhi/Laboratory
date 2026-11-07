@@ -1,0 +1,8 @@
+New-Item -ItemType Directory -Force ".claude/skills/project-onboarding/references"
+
+
+هدف	                          دستور
+معرفی اولیه پروژه	             /project-onboarding
+به‌روزرسانی مستندات	/project-onboarding Update documentation
+بررسی وضعیت مستندات	/project-onboarding Check documentation status
+بررسی مجدد معماری	/project-onboarding Analyze architecture

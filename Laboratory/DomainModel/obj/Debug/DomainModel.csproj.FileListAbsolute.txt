@@ -21,3 +21,15 @@ C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DomainModel\obj\Deb
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DomainModel\obj\Debug\DomainModel.csproj.CopyComplete
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DomainModel\obj\Debug\DomainModel.dll
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DomainModel\obj\Debug\DomainModel.pdb
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\DomainModel.dll.config
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\DomainModel.dll
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\DomainModel.pdb
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\EntityFramework.dll
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\EntityFramework.xml
+D:\Ali Feghhi\Laboratory\DomainModel\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ali Feghhi\Laboratory\DomainModel\obj\Debug\DomainModel.csproj.AssemblyReference.cache
+D:\Ali Feghhi\Laboratory\DomainModel\obj\Debug\DomainModel.csproj.CoreCompileInputs.cache
+D:\Ali Feghhi\Laboratory\DomainModel\obj\Debug\DomainMo.6BFF71DD.Up2Date
+D:\Ali Feghhi\Laboratory\DomainModel\obj\Debug\DomainModel.dll
+D:\Ali Feghhi\Laboratory\DomainModel\obj\Debug\DomainModel.pdb

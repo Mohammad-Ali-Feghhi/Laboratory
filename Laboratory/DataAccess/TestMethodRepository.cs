@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using DataAccess.Services;
 using DomainModel.Models;
@@ -17,6 +18,7 @@ namespace DataAccess
         {
             return _db.TestMethod.Where(x => x.IsDeleted == false)
                                  .OrderBy(x => x.TestMethodName)
+                                 .AsNoTracking()
                                  .ToList();
         }
     }

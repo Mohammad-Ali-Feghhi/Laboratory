@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net.Sockets;
 using DataAccess.Services;
@@ -31,7 +32,7 @@ namespace DataAccess
                     return Result<Test>.Fail(ErrorCode.ValidationError, "واحد اندازه گیری الزامی است!");
                 }
 
-                if (newTest.SamplyeTypeId == 0 || newTest.SamplyeTypeId == -1)
+                if (newTest.SampleTypeId == 0 || newTest.SampleTypeId == -1)
                 {
                     return Result<Test>.Fail(ErrorCode.ValidationError, "نوع نمونه الزامی است!");
                 }
@@ -65,7 +66,7 @@ namespace DataAccess
         {
             try
             {
-                var test = _db.Test.FirstOrDefault(x => x.TestId == testId && x.IsDeleted == false);
+                var test = _db.Test.AsNoTracking().FirstOrDefault(x => x.TestId == testId && x.IsDeleted == false);
                 return test == null ? Result<Test>.Fail(ErrorCode.UserNotFound, "پارامتر مورد نظر پیدا نشد!") :
                                       Result<Test>.Success(test);
             }
@@ -79,7 +80,7 @@ namespace DataAccess
         {
             try
             {
-                var test = _db.Test.Where(x => x.TestId == testId && x.IsDeleted == false)
+                var test = _db.Test.AsNoTracking().Where(x => x.TestId == testId && x.IsDeleted == false)
                     .Select(x => new TestAcceptionItemViewModel
                     {
                         TestId = x.TestId,
@@ -111,12 +112,12 @@ namespace DataAccess
 
         public List<Test> GetAllTests()
         {
-            return _db.Test.Where(x => x.IsDeleted == false).OrderBy(x => x.TestName).ToList();
+            return _db.Test.Where(x => x.IsDeleted == false).OrderBy(x => x.TestName).AsNoTracking().ToList();
         }
 
         public List<TestSearchListItem> TestSearch(string phrase)
         {
-            var q = from t in _db.Test
+            var q = from t in _db.Test.AsNoTracking()
                 where t.TestName.StartsWith(phrase) &&
                       t.IsDeleted == false
                 select new TestSearchListItem

@@ -28,3 +28,18 @@ C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debu
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CopyComplete
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.dll
 C:\Users\Mohammad Ali Feghhi\OneDrive\Desktop\Git\Laboratory\DataAccess\obj\Debug\DataAccess.pdb
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\DataAccess.dll.config
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\DataAccess.dll
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\DataAccess.pdb
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\DomainModel.dll
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\EntityFramework.dll
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\EntityFramework.SqlServer.dll
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\DomainModel.pdb
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\DomainModel.dll.config
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\EntityFramework.xml
+D:\Ali Feghhi\Laboratory\DataAccess\bin\Debug\EntityFramework.SqlServer.xml
+D:\Ali Feghhi\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.AssemblyReference.cache
+D:\Ali Feghhi\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.CoreCompileInputs.cache
+D:\Ali Feghhi\Laboratory\DataAccess\obj\Debug\DataAccess.csproj.Up2Date
+D:\Ali Feghhi\Laboratory\DataAccess\obj\Debug\DataAccess.dll
+D:\Ali Feghhi\Laboratory\DataAccess\obj\Debug\DataAccess.pdb

@@ -24,7 +24,7 @@ namespace DomainModel.Models
 
         public int UnitId { get; set; }
 
-        public int SamplyeTypeId { get; set; }
+        public int SampleTypeId { get; set; }
 
         public int TestMethodId { get; set; }
 
